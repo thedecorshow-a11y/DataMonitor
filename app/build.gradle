@@ -4,6 +4,7 @@ plugins {
 }
 
 android {
+    namespace 'com.drnoob.datamonitor'
     compileSdk 34
 //    buildToolsVersion "30.0.3"
 

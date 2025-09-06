@@ -59,7 +59,7 @@ class CustomSessionFragment: Fragment() {
 
     private lateinit var binding: FragmentCustomSessionBinding
 
-    private var filterDate: String? = AppDataUsageFragment.customFilterDate.value ?: null
+    private var filterDate: String? = AppDataUsageFragment.customFilterDate.value
 
     private var startDateMillis = AppDataUsageFragment.customFilterDateMillis.value?.first ?: 0L
     private var endDateMillis = AppDataUsageFragment.customFilterDateMillis.value?.second ?: 0L

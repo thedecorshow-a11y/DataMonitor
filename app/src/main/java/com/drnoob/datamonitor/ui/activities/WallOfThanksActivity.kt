@@ -34,7 +34,7 @@ import android.view.animation.Interpolator
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
+import androidx  .recyclerview.widget.RecyclerView
 import com.android.volley.DefaultRetryPolicy
 import com.android.volley.Request
 import com.android.volley.toolbox.StringRequest
@@ -99,7 +99,7 @@ class WallOfThanksActivity : AppCompatActivity() {
                         .itemCount - 1) {
                     mHandler.removeCallbacks(SCROLLING_RUNNABLE)
                     isListInMotion = false
-                    val postHandler = Handler()
+                    val postHandler = Handler(Looper.getMainLooper())
                     postHandler.postDelayed({
                         var adapter = recyclerView.adapter as DonorAdapter
                         recyclerView.adapter = null
